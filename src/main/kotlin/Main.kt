@@ -1,4 +1,5 @@
 import algorithm.bubbleSort
+import  algorithm.insertionSort
 
 // Unit type is the default return type in kotlin
 fun main(args: Array<String>): Unit {
@@ -9,8 +10,15 @@ fun main(args: Array<String>): Unit {
     println("Program arguments: ${args.joinToString()}")
 
     val arr: Array<Int> = arrayOf(-2,1,2,-10)
-    val res: Array<Int> = bubbleSort(arr)
-    for (i in res) {
+    val resBubbleSort: Array<Int> = bubbleSort(arr)
+    for (i in resBubbleSort) {
+        println(i)
+    }
+
+    println("-------------------")
+
+    val resInsertionSort: Array<Int> = insertionSort(arr)
+    for (i in resInsertionSort) {
         println(i)
     }
 }
